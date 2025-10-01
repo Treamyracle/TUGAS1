@@ -52,86 +52,82 @@ vi
 # DAFTAR GAMBAR .................................................................................................. xiii
 # DAFTAR LAMPIRAN ................................................................................................ xv
 # BAB 1  PENDAHULUAN ...................................................................................... 1
-1.1  Latar Belakang ................................................................................. 1
-1.2  Rumusan Masalah ........................................................................... 2
-1.3  Tujuan .............................................................................................. 2
-1.4  Manfaat ........................................................................................... 3
-1.5  Batasan Masalah ............................................................................. 3
-1.6  Sistematika Pembahasan ................................................................ 3
-
+## 1.1  Latar Belakang ................................................................................. 1
+## 1.2  Rumusan Masalah ........................................................................... 2
+## 1.3  Tujuan .............................................................................................. 2
+## 1.4  Manfaat ........................................................................................... 3
+## 1.5  Batasan Masalah ............................................................................. 3
+## 1.6  Sistematika Pembahasan ................................................................ 3
 # BAB 2  LANDASAN KEPUSTAKAAN ..................................................................... 5
-2.1  Kajian Pustaka ................................................................................. 5
-2.2  Dasar Teori ...................................................................................... 7
-2.2.1  Resume .................................................................................... 7
-2.2.2  Similaritas Teks ........................................................................ 8
-2.2.3  Pra-pemrosesan Teks .............................................................. 9
-2.2.4  TF-IDF .................................................................................... 10
-2.2.5  Word2Vec .............................................................................. 12
-2.2.6  Improved Sqrt-Cosine Similarity ............................................ 13
-2.2.7  Cosine Similarity .................................................................... 14
-2.2.8  Human-Level Performance .................................................... 14
-2.2.9  Spearman Rank Correlation Coefficient (SRCC) .................... 15
-
+## 2.1  Kajian Pustaka ................................................................................. 5
+## 2.2  Dasar Teori ...................................................................................... 7
+### 2.2.1  Resume .................................................................................... 7
+### 2.2.2  Similaritas Teks ........................................................................ 8
+### 2.2.3  Pra-pemrosesan Teks .............................................................. 9
+### 2.2.4  TF-IDF .................................................................................... 10
+### 2.2.5  Word2Vec .............................................................................. 12
+### 2.2.6  Improved Sqrt-Cosine Similarity ............................................ 13
+### 2.2.7  Cosine Similarity .................................................................... 14
+### 2.2.8  Human-Level Performance .................................................... 14
+### 2.2.9  Spearman Rank Correlation Coefficient (SRCC) .................... 15
 # BAB 3  METODOLOGI ....................................................................................... 16
 vii
-3.1  Tipe Penelitian ............................................................................... 16
-3.2  Strategi Penelitian ......................................................................... 16
-3.3  Lokasi Penelitian ............................................................................ 16
-3.4  Metode Pengumpulan Data .......................................................... 16
-3.5  Metode Analisis Data .................................................................... 17
-3.6  Metode Evaluasi ............................................................................ 17
-3.7  Peralatan Pendukung .................................................................... 18
-3.7.1  Perangkat Lunak (Software) .................................................. 18
-3.7.2  Perangkat Keras (Hardware) ................................................. 18
-3.8  Perancangan Algoritma ................................................................. 18
 
+## 3.1  Tipe Penelitian ............................................................................... 16
+## 3.2  Strategi Penelitian ......................................................................... 16
+## 3.3  Lokasi Penelitian ............................................................................ 16
+## 3.4  Metode Pengumpulan Data .......................................................... 16
+## 3.5  Metode Analisis Data .................................................................... 17
+## 3.6  Metode Evaluasi ............................................................................ 17
+## 3.7  Peralatan Pendukung .................................................................... 18
+### 3.7.1  Perangkat Lunak (Software) .................................................. 18
+### 3.7.2  Perangkat Keras (Hardware) ................................................. 18
+## 3.8  Perancangan Algoritma ................................................................. 18
 # BAB 4  PERANCANGAN .................................................................................... 20
-4.1  Deskripsi Umum ............................................................................ 20
-4.2  Preprocessing ................................................................................ 20
-4.2.1  Ekstraksi Section .................................................................... 20
-4.2.2  Preprocessing Isian Resume .................................................. 25
-4.2.3  Preprocessing Penamaan Section ......................................... 27
-4.2.4  Preprocessing Kualifikasi Lowongan Kerja ............................ 29
-4.3  Perhitungan Representasi Teks ..................................................... 30
-4.3.1  TF-IDF .................................................................................... 30
-4.3.2  Word2Vec .............................................................................. 33
-4.4  Perhitungan Similaritas ................................................................. 36
-4.4.1  Improved Sqrt-Cosine Similarity ............................................ 36
-4.4.2  Cosine Similarity .................................................................... 38
-4.5  Perhitungan Korelasi ..................................................................... 40
-4.6  Perhitungan Relevansi dan Senioritas........................................... 42
-4.7  Perhitungan Manual...................................................................... 44
-4.7.1  Data Uji .................................................................................. 44
-4.7.2  Perhitungan Manual Ekstraksi Section .................................. 45
-4.7.3  Perhitungan Manual Preprocessing Resume ........................ 46
-4.7.4  Perhitungan  Manual  Preprocessing  Kualifikasi Lowongan Kerja .................................................................................... 59
-4.7.5  Perhitungan Manual Representasi Teks ............................... 61
+## 4.1  Deskripsi Umum ............................................................................ 20
+## 4.2  Preprocessing ................................................................................ 20
+### 4.2.1  Ekstraksi Section .................................................................... 20
+### 4.2.2  Preprocessing Isian Resume .................................................. 25
+### 4.2.3  Preprocessing Penamaan Section ......................................... 27
+### 4.2.4  Preprocessing Kualifikasi Lowongan Kerja ............................ 29
+## 4.3  Perhitungan Representasi Teks ..................................................... 30
+### 4.3.1  TF-IDF .................................................................................... 30
+### 4.3.2  Word2Vec .............................................................................. 33
+## 4.4  Perhitungan Similaritas ................................................................. 36
+### 4.4.1  Improved Sqrt-Cosine Similarity ............................................ 36
+### 4.4.2  Cosine Similarity .................................................................... 38
+## 4.5  Perhitungan Korelasi ..................................................................... 40
+## 4.6  Perhitungan Relevansi dan Senioritas........................................... 42
+## 4.7  Perhitungan Manual...................................................................... 44
+### 4.7.1  Data Uji .................................................................................. 44
+### 4.7.2  Perhitungan Manual Ekstraksi Section .................................. 45
+### 4.7.3  Perhitungan Manual Preprocessing Resume ........................ 46
+### 4.7.4  Perhitungan  Manual  Preprocessing  Kualifikasi Lowongan Kerja .................................................................................... 59
+### 4.7.5  Perhitungan Manual Representasi Teks ............................... 61
 viii
-4.7.6  Perhitungan Manual Similaritas ............................................ 94
-4.7.7  Skenario Pengujian .............................................................. 101
 
+### 4.7.6  Perhitungan Manual Similaritas ............................................ 94
+### 4.7.7  Skenario Pengujian .............................................................. 101
 # BAB 5  IMPLEMENTASI................................................................................... 105
-5.1  Implementasi  Kode  Program  Import  Libraries  dan  Load Dataset ..................................................................................................... 105
-5.2  Implementasi Kode Program Preprocessing Resume ................. 108
-5.3  Implementasi  Kode  Program  Preprocessing  Kualifikasi Lowongan Kerja ....................................................................................... 118
-5.4  Implementasi Kode Program Representasi Teks TF-IDF ............. 120
-5.5  Implementasi Kode Program Representasi Teks Word2Vec 121
-5.6  Implementasi Kode Program Perhitungan Similaritas ................ 123
-5.6.1  Implementasi  Kode  Program  Improved  Sqrt-Cosine Similarity............................................................................................. 123
-5.6.2  Implementasi  Kode  Program  TF-IDF  dan  Improved Sqrt-Cosine Similarity ......................................................................... 124
-5.6.3  Implementasi  Kode  Program  Word2Vec  dan  Cosine Similarity............................................................................................. 129
-5.6.4  Implementasi  Kode  Program  Word2Vec  dan Improved Sqrt-Cosine Similarity ......................................................... 134
-5.7  Implementasi Kode Program Pengujian ..................................... 139
-5.7.1  Implementasi Kode Program Perhitungan SRCC ................ 139
-5.7.2  Implementasi  Kode  Program  Perhitungan  Relevansi dan Senioritas ..................................................................................... 144
-
+## 5.1  Implementasi  Kode  Program  Import  Libraries  dan  Load Dataset ..................................................................................................... 105
+## 5.2  Implementasi Kode Program Preprocessing Resume ................. 108
+## 5.3  Implementasi  Kode  Program  Preprocessing  Kualifikasi Lowongan Kerja ....................................................................................... 118
+## 5.4  Implementasi Kode Program Representasi Teks TF-IDF ............. 120
+## 5.5  Implementasi Kode Program Representasi Teks Word2Vec 121
+## 5.6  Implementasi Kode Program Perhitungan Similaritas ................ 123
+### 5.6.1  Implementasi  Kode  Program  Improved  Sqrt-Cosine Similarity............................................................................................. 123
+### 5.6.2  Implementasi  Kode  Program  TF-IDF  dan  Improved Sqrt-Cosine Similarity ......................................................................... 124
+### 5.6.3  Implementasi  Kode  Program  Word2Vec  dan  Cosine Similarity............................................................................................. 129
+### 5.6.4  Implementasi  Kode  Program  Word2Vec  dan Improved Sqrt-Cosine Similarity ......................................................... 134
+## 5.7  Implementasi Kode Program Pengujian ..................................... 139
+### 5.7.1  Implementasi Kode Program Perhitungan SRCC ................ 139
+### 5.7.2  Implementasi  Kode  Program  Perhitungan  Relevansi dan Senioritas ..................................................................................... 144
 # BAB 6  PENGUJIAN DAN ANALISIS HASIL ....................................................... 150
-6.1  Pengujian ..................................................................................... 150
-6.2  Analisis Hasil ................................................................................ 156
-
+## 6.1  Pengujian ..................................................................................... 150
+## 6.2  Analisis Hasil ................................................................................ 156
 # BAB 7  PENUTUP ............................................................................................ 165
-7.1  Kesimpulan .................................................................................. 165
-7.2  Saran ............................................................................................ 166
+## 7.1  Kesimpulan .................................................................................. 165
+## 7.2  Saran ............................................................................................ 166
 ix
 
 # DAFTAR TABEL
@@ -251,13 +247,12 @@ xiv
 # LAMPIRAN A SURAT PERNYATAAN VALIDITAS ................................................... 171
 # LAMPIRAN B BOBOT PER SECTION BERDASARKAN INDUSTRI ............................ 172
 # LAMPIRAN  C  HASIL  PEMERINGKATAN  LIMA  RESUME  PER  KUALIFIKASI LOWONGAN KERJA ............................................................................................. 180
-C.1 Tanpa Bobot - TF-IDF dan Improved Sqrt-Cosine Similarity............... 180
-C.2 Tanpa Bobot - Word2Vec dan Cosine Similarity ................................ 190
-C.3 Tanpa Bobot - Word2Vec dan Improved Sqrt-Cosine Similarity ........ 201
-C.4 Dengan Bobot - TF-IDF dan Improved Sqrt-Cosine Similarity ............ 211
-C.5 Dengan Bobot - Word2Vec dan Cosine Similarity ............................. 220
-C.6 Dengan Bobot - Word2Vec dan Improved Sqrt-Cosine Similarity ................................................................................................................. 231
-
+# C.1 Tanpa Bobot - TF-IDF dan Improved Sqrt-Cosine Similarity............... 180
+# C.2 Tanpa Bobot - Word2Vec dan Cosine Similarity ................................ 190
+# C.3 Tanpa Bobot - Word2Vec dan Improved Sqrt-Cosine Similarity ........ 201
+# C.4 Dengan Bobot - TF-IDF dan Improved Sqrt-Cosine Similarity ............ 211
+# C.5 Dengan Bobot - Word2Vec dan Cosine Similarity ............................. 220
+# C.6 Dengan Bobot - Word2Vec dan Improved Sqrt-Cosine Similarity ................................................................................................................. 231
 # LAMPIRAN  D  GRAFIK  GARIS  TIGA  PARAMETER  SETIAP  KUALIFIKASI LOWONGAN KERJA ............................................................................................. 242
 xv
 
@@ -2474,7 +2469,7 @@ Wujarso,  R.,  2022.  PERAN  HUMAN  CAPITAL  DALAM  PERTUMBUHAN  EKONOMI. Journa
 179
 
 ## LAMPIRAN C HASIL PEMERINGKATAN LIMA RESUME PER KUALIFIKASI LOWONGAN KERJA
-C.1 Tanpa Bobot - TF-IDF dan Improved Sqrt-Cosine Similarity
+# C.1 Tanpa Bobot - TF-IDF dan Improved Sqrt-Cosine Similarity
 Rank  Resume ID  Position  Similarity  Rank  Relevance  Seniority Score  Expert
 1  38688388  Business  0,1919605 3  TRUE  FALSE Developm 416 ent Executive
 Business  0,18632532  31638814  2  TRUE  FALSE Developm 744 ent Executive
@@ -2609,7 +2604,7 @@ Spare part  0,13712274  71772815  2  FALSE  TRUE Admin  976
 4  27884470  Unmanag 0,1726401 3  FALSE  FALSE ed  754 Merchant Engagem ent Senior Associate, BPO  Field Sales
 5  38688388  Unmanag 0,1670092 2  TRUE  FALSE ed  401 Merchant Engagem ent Senior Associate, BPO  Field Sales
 
-### C.2 Tanpa Bobot - Word2Vec dan Cosine Similarity
+# C.2 Tanpa Bobot - Word2Vec dan Cosine Similarity
 Rank  Resume ID  Position  Similarity  Rank  Relevance  Seniority Score  Expert
 Business  0,89108361  26932091  4  TRUE  FALSE Developm 577 ent Executive
 2  10464113  Business  0,8697264 3  TRUE  FALSE Developm 314 ent Executive
@@ -2745,7 +2740,8 @@ Unmanag 0,83743213  16877897  5  FALSE  FALSE ed  014 Merchant Engagem ent Senio
 4  30862904  Unmanag 0,8252724 4  FALSE  FALSE ed  558 Merchant Engagem ent Senior Associate, BPO  Field Sales
 5  12938389  Unmanag 0,8237882 3  FALSE  FALSE ed  972 Merchant Engagem ent Senior Associate, BPO  Field Sales
 200
-C.3 Tanpa Bobot - Word2Vec dan Improved Sqrt-Cosine Similarity
+
+# C.3 Tanpa Bobot - Word2Vec dan Improved Sqrt-Cosine Similarity
 Rank  Resume ID  Position  Similarity  Rank  Relevance  Seniority Score  Expert
 1  26932091  Business  0,9526863 2  TRUE  FALSE Developm 545 ent Executive
 2  10464113  Business  0,9469295 5  FALSE  TRUE Developm 215 ent Executive
@@ -2879,7 +2875,8 @@ Unmanag 0,96215741  26932091  1  TRUE  TRUE ed  749 Merchant Engagem ent Senior 
 BPO  Field Sales
 4  13964744  Unmanag 0,9332395 2  FALSE  FALSE ed  557 Merchant Engagem ent Senior Associate, BPO  Field Sales
 5  24727739  Unmanag 0,9331051 5  FALSE  FALSE ed  675 Merchant Engagem ent Senior Associate, BPO  Field Sales
-C.4 Dengan Bobot - TF-IDF dan Improved Sqrt-Cosine Similarity
+
+# C.4 Dengan Bobot - TF-IDF dan Improved Sqrt-Cosine Similarity
 Rank  Resume ID  Position  Similarity  Rank  Relevance  Seniority Score  Expert
 1  Business  0,205913 2  TRUE  FALSE  38688388 Developme 2303 nt Executive
 2  Business  0,202912 1  TRUE  FALSE  31638814 Developme 8525 nt Executive
@@ -3014,7 +3011,8 @@ BPO  Field Sales
 3  Unmanage 0,186580 4  FALSE  FALSE  68781345 d Merchant  6571 Engagemen t  Senior Associate, BPO  Field Sales
 4  Unmanage 0,163489 2  TRUE  FALSE  11289482 d Merchant  1955 Engagemen t  Senior Associate, BPO  Field Sales
 5  Unmanage 0,161752 5  FALSE  TRUE  26919036 d Merchant  4074 Engagemen t  Senior Associate, BPO  Field Sales
-C.5 Dengan Bobot - Word2Vec dan Cosine Similarity
+
+# C.5 Dengan Bobot - Word2Vec dan Cosine Similarity
 Rank  Resume ID  Position  Similarity  Rank  Relevance  Seniority Score  Expert
 1  26932091  Business  0,9016295 3  TRUE  FALSE Developm 473 ent Executive
 2  10464113  Business  0,8664782 2  TRUE  TRUE Developm 882 ent Executive
@@ -3151,7 +3149,8 @@ Regional  0,92046371  26932091  3  FALSE  TRUE Sales  706 Manager
 5  16877897  Unmanag 0,8320381 5  FALSE  FALSE ed  194 Merchant
 230
 Engagem ent Senior Associate, BPO  Field Sales
-C.6 Dengan Bobot - Word2Vec dan Improved Sqrt-Cosine Similarity
+
+# C.6 Dengan Bobot - Word2Vec dan Improved Sqrt-Cosine Similarity
 Rank  Resume ID  Position  Similarity  Rank  Relevance  Seniority Score  Expert
 1  26932091  Business  0,9539668 2  TRUE  FALSE Developm 445 ent Executive
 2  14790629  Business  0,9506780 4  TRUE  FALSE Developm 856 ent Executive

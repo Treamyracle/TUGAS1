@@ -4,11 +4,11 @@ from typing import List, Tuple, Dict, Optional, Any
 from collections import defaultdict
 
 NUMBERING_PATTERN = re.compile(
-    r'^(?P<label>(?:BAB\s+(?:[IVXLC]+|\d+))|(?:\d+(?:\.\d+)*))[\.\)]?\s+(?P<title>[A-Z][A-Za-z].+)$'
+    r'^(?P<label>(?:BAB\s+(?:[IVXLC]+|\d+))|(?:\d+\.\d+(?:\.\d+)*))[\.\)]?\s+(?P<title>[A-Z][A-Za-z].+)$'
 )
 
 ROMAN_PATTERN = re.compile(
-    r'^(?P<label>[IVXLC]+)[\.\)]?\s+(?P<title>[A-Za-z].+)$',
+    r'^(?P<label>(?:[IVXLC]+|[A-Z]\.\d+))[\.\)]?\s+(?P<title>.+)$',
     re.I
 )
 
@@ -29,7 +29,7 @@ def classify_line_heading(line: str, size: float = None) -> Tuple[bool, Optional
 
     # matches BAB/1.1 style
     m = NUMBERING_PATTERN.match(s)
-    if m and size >12:
+    if m:
         label = m.group('label').strip()
         raw_title = m.group('title').strip() or label
         title = f"{label} {raw_title}"
@@ -155,10 +155,10 @@ def build_hierarchy_from_extractor(rows: List[Dict[str, Any]]) -> Dict:
             treat_as_heading = True
             inferred_level = font_rank
 
-        # kalau ALLCAPS pendek tapi font kecil → jangan jadi heading
-        if raw.isupper() and len(raw.split()) <= 10 and size > 12:
-            treat_as_heading = True
-            inferred_level = inferred_level or 1
+        # # kalau ALLCAPS pendek tapi font kecil → jangan jadi heading
+        # if raw.isupper() and len(raw.split()) <= 10 and size > 12:
+        #     treat_as_heading = True
+        #     inferred_level = inferred_level or 1
 
         if treat_as_heading:
             node = {
